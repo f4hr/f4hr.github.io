@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Resto</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper wrapper">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img src="./img/logo.svg" width="81" height="30" alt="Resto restaurant">
+          <img src="img/logo.svg" width="81" height="30" alt="Resto restaurant">
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button">
@@ -42,6 +42,10 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Resto restaurant</h1>
+    <button class="scroll-button scroll-button--hidden" onclick="scrollToTop()" tabIndex="-1">
+      <span class="visually-hidden">Scroll top</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="64" viewBox="0 0 320 512"><path fill="#3b3b3b" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg>
+    </button>
     <section class="billboard">
       <div class="billboard__container">
         <span class="billboard__logo"></span>
@@ -127,9 +131,36 @@
               </td>
               <td class="menu__price">$35</td>
             </tr>
+            <tr>
+              <td class="menu__item">
+                Donec sodales magna
+                <span class="menu__description">
+                  Tuna, Sweetcorn, Cheese
+                </span>
+              </td>
+              <td class="menu__price">$25</td>
+            </tr>
+            <tr>
+              <td class="menu__item">
+                Saugue velit cursus
+                <span class="menu__description">
+                  Pineapple, Minced Beef, Cheese
+                </span>
+              </td>
+              <td class="menu__price">$30</td>
+            </tr>
+            <tr>
+              <td class="menu__item">
+                Arcu pede enim justo
+                <span class="menu__description">
+                  Tuna, Sweetcorn, Cheese
+                </span>
+              </td>
+              <td class="menu__price">$45</td>
+            </tr>
           </tbody>
         </table>
-        <button class="menu__load-button" type="button">
+        <button class="menu__toggle" type="button">
           load more
         </button>
       </div>
@@ -140,16 +171,11 @@
           <span class="section-header__text">Featured dishes</span>
         </h2>
         <div class="featured__pagination">
-          <ul class="featured__pagination-list">
-            <li class="featured__pagination-item"></li>
-            <li class="featured__pagination-item featured__pagination-item--active"></li>
-            <li class="featured__pagination-item"></li>
-            <li class="featured__pagination-item"></li>
-          </ul>
+          <ul class="featured__pagination-list"></ul>
         </div>
-        <ul class="featured__list">
+        <ul id="featured__slider" class="featured__list">
           <li class="featured__item">
-            <img src="./img/temp/featured-1.jpg" width="230" height="200" alt="Fugiat nulla sint">
+            <img src="img/content/featured-1.jpg" width="230" height="200" alt="Fugiat nulla sint">
             <h3 class="featured__title">Fugiat nulla sint</h3>
             <span class="featured__price">$30</span>
             <div class="featured__rating" data-stars="4">
@@ -171,7 +197,7 @@
             </div>
           </li>
           <li class="featured__item">
-            <img src="./img/temp/featured-2.jpg" width="230" height="200" alt="Daute irure dolor">
+            <img src="img/content/featured-2.jpg" width="230" height="200" alt="Daute irure dolor">
             <h3 class="featured__title">Daute irure dolor</h3>
             <span class="featured__price">$24</span>
             <div class="featured__rating" data-stars="3">
@@ -193,7 +219,7 @@
             </div>
           </li>
           <li class="featured__item">
-            <img src="./img/temp/featured-3.jpg" width="230" height="200" alt="Officia deserunt mollit">
+            <img src="img/content/featured-3.jpg" width="230" height="200" alt="Officia deserunt mollit">
             <h3 class="featured__title">Officia deserunt mollit</h3>
             <span class="featured__price">$60</span>
             <div class="featured__rating" data-stars="5">
@@ -215,7 +241,51 @@
             </div>
           </li>
           <li class="featured__item">
-            <img src="./img/temp/featured-4.jpg" width="230" height="200" alt="Pim minim veniam">
+            <img src="img/content/featured-1.jpg" width="230" height="200" alt="Fugiat nulla sint">
+            <h3 class="featured__title">Fugiat nulla sint</h3>
+            <span class="featured__price">$30</span>
+            <div class="featured__rating" data-stars="4">
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+            </div>
+          </li>
+          <li class="featured__item">
+            <img src="img/content/featured-2.jpg" width="230" height="200" alt="Daute irure dolor">
+            <h3 class="featured__title">Daute irure dolor</h3>
+            <span class="featured__price">$24</span>
+            <div class="featured__rating" data-stars="3">
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
+                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              </svg>
+            </div>
+          </li>
+          <li class="featured__item">
+            <img src="img/content/featured-4.jpg" width="230" height="200" alt="Pim minim veniam">
             <h3 class="featured__title">Pim minim veniam</h3>
             <span class="featured__price">$17</span>
             <div class="featured__rating" data-stars="4">
@@ -245,19 +315,19 @@
           <span class="section-header__text">The gallery</span></h2>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--first">
-            <img src="./img/temp/gallery-1.jpg" width="367" height="432" alt="Food photo">
+            <img src="img/content/gallery-1.jpg" width="367" height="432" alt="Food photo">
           </li>
           <li class="gallery__item">
-            <img src="./img/temp/gallery-2.jpg" width="367" height="216" alt="Food photo">
+            <img src="img/content/gallery-2.jpg" width="367" height="216" alt="Food photo">
           </li>
           <li class="gallery__item">
-            <img src="./img/temp/gallery-3.jpg" width="367" height="216" alt="Food photo">
+            <img src="img/content/gallery-3.jpg" width="367" height="216" alt="Food photo">
           </li>
           <li class="gallery__item">
-            <img src="./img/temp/gallery-4.jpg" width="367" height="216" alt="Food photo">
+            <img src="img/content/gallery-4.jpg" width="367" height="216" alt="Food photo">
           </li>
           <li class="gallery__item">
-            <img src="./img/temp/gallery-5.jpg" width="367" height="216" alt="Food photo">
+            <img src="img/content/gallery-5.jpg" width="367" height="216" alt="Food photo">
           </li>
         </ul>
       </div>
@@ -304,12 +374,13 @@
       </div>
       <div class="page-footer__copyright copyright">
         <div class="copyright__logo">
-          <img src="./img/logo-dark.svg" width="81" height="30" alt="Resto logo">
+          <img src="img/logo-dark.svg" width="81" height="30" alt="Resto logo">
         </div>
         <span class="copyright__text">© All Rights Reserved 2018</span>
       </div>
     </div>
   </footer>
-  <script src="./js/index.js"></script>
+  <script src="js/siema.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
