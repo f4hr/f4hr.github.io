@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Resto</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,7 +12,9 @@
     <div class="page-header__wrapper wrapper">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img src="img/logo.svg" width="81" height="30" alt="Resto restaurant">
+          <svg class="header-logo" title="Resto Logo">
+            <use xlink:href="img/sprite.svg#header-logo"></use>
+          </svg>
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button">
@@ -44,11 +45,15 @@
     <h1 class="visually-hidden">Resto restaurant</h1>
     <button class="scroll-button scroll-button--hidden" onclick="scrollToTop()" tabIndex="-1">
       <span class="visually-hidden">Scroll top</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="64" viewBox="0 0 320 512"><path fill="#3b3b3b" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg>
+      <svg class="scroll-button__img" width="40" height="64" title="Scroll up button">
+        <use xlink:href="img/sprite.svg#scroll-button"></use>
+      </svg>
     </button>
     <section class="billboard">
       <div class="billboard__container">
-        <span class="billboard__logo"></span>
+        <svg class="billboard__logo" title="Billboard Resto logo">
+          <use xlink:href="img/sprite.svg#billboard-logo"></use>
+        </svg>
         <span class="billboard__description">
           resto restaurant home page website template
         </span>
@@ -179,20 +184,20 @@
             <h3 class="featured__title">Fugiat nulla sint</h3>
             <span class="featured__price">$30</span>
             <div class="featured__rating" data-stars="4">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -201,20 +206,20 @@
             <h3 class="featured__title">Daute irure dolor</h3>
             <span class="featured__price">$24</span>
             <div class="featured__rating" data-stars="3">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -223,20 +228,20 @@
             <h3 class="featured__title">Officia deserunt mollit</h3>
             <span class="featured__price">$60</span>
             <div class="featured__rating" data-stars="5">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -245,20 +250,20 @@
             <h3 class="featured__title">Fugiat nulla sint</h3>
             <span class="featured__price">$30</span>
             <div class="featured__rating" data-stars="4">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -267,20 +272,20 @@
             <h3 class="featured__title">Daute irure dolor</h3>
             <span class="featured__price">$24</span>
             <div class="featured__rating" data-stars="3">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -289,20 +294,20 @@
             <h3 class="featured__title">Pim minim veniam</h3>
             <span class="featured__price">$17</span>
             <div class="featured__rating" data-stars="4">
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="1">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="1">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="2">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="2">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="3">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="3">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="4">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="4">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
-              <svg height="15" width="15" viewBox="0 0 25 23" class="star-rating" data-rating="5">
-                <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"></polygon>
+              <svg height="15" width="15" class="star-rating" data-rating="5">
+                <use xlink:href="img/sprite.svg#star-rating"></use>
               </svg>
             </div>
           </li>
@@ -373,14 +378,18 @@
         </nav>
       </div>
       <div class="page-footer__copyright copyright">
-        <div class="copyright__logo">
-          <img src="img/logo-dark.svg" width="81" height="30" alt="Resto logo">
-        </div>
+        <svg class="copyright__logo" width="81" height="30" title="Resto Logo">
+          <use xlink:href="img/sprite.svg#footer-logo-dark"></use>
+        </svg>
         <span class="copyright__text">© All Rights Reserved 2018</span>
       </div>
     </div>
   </footer>
+  <script src="js/svg4everybody.min.js"></script>
   <script src="js/siema.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", svg4everybody({}));
+  </script>
 </body>
 </html>
