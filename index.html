@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="wrapper">
-    <ul class="site-list">
-      <li class="site-list__item">
-        <a class="site-list__link" href="resto/index.html">resto</a>
-      </li>
-    </ul>
-  </section>
+  <main class="main">
+    <div class="wrapper">
+      <h1>Сайтики</h1>
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="resto/index.html">— Resto —</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="sedona/index.html">— Sedona —</a>
+        </li>
+      </ul>
+    </div>
+  </main>
   <script src="vanilla-tilt.min.js"></script>
   <script type="text/javascript">
-    VanillaTilt.init(document.querySelector(".site-list"), {
-      max: 15,
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+      max: 30,
       transition: true,
       easing: "cubic-bezier(.5,.15,.5,.85)",
       speed: 500
