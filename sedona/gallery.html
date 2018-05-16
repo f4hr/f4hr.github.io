@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Седона - Фото и видео</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header no-js">
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html" class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+        </li>
+        <li class="main-nav__item main-nav__item--blank">
+          <a class="main-nav__link"></a>
+        </li>
+        <li class="main-nav__item">
+          <a href="review.html" class="main-nav__link">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/" class="main-nav__link">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__logo">
+      <span class="visually-hidden">Sedona logo</span>
+    </a>
+    <button class="page-header__nav-toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+  </header>
+  <main class="page-main page-main--gallery">
+    <h1 class="visually-hidden">Фото и видео галлерея</h1>
+    <section class="intro rw-intro">
+      <h2 class="visually-hidden">Вступление</h2>
+      <div class="intro__wrapper rw-intro__wrapper wrapper">
+        <p class="intro__text rw-intro-text">
+          <svg class="intro__logo rw-intro__logo" width="230" height="40" role="img" title="надпись Седона">
+            <use xlink:href="img/sprite.svg#txt-review-intro"/>
+          </svg>
+        </p>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2 class="gallery__header">Фото и видео</h2>
+      <div class="gallery__intro wrapper">
+        <p class="gallery__intro-text">
+          Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery-photo">
+          <picture class="gallery-photo__image">
+            <source srcset="img/gallery-photo-1-desktop.jpg" media="(min-width: 80em)">
+            <source srcset="img/gallery-photo-1-tablet.jpg" media="(min-width: 48em)">
+            <img src="img/gallery-photo-1-mobile.jpg" alt="Дорога уходящая в закат">
+          </picture>
+          <div class="gallery-photo__info">
+            <div class="gallery-photo__text">
+              <h3 class="gallery-photo__header">Неродные просторы</h3>
+              <p class="gallery-photo__author">Автор фото: Борис</p>
+            </div>
+            <div class="gallery-photo__like">
+              <svg class="gallery-photo__icon-like" width="22" height="20" role="img" title="иконка лайка">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
+              </svg>
+              <b class="gallery-photo__num-likes">1350</b>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item gallery-photo">
+          <picture class="gallery-photo__image">
+            <source srcset="img/gallery-photo-2-desktop.jpg" media="(min-width: 80em)">
+            <source srcset="img/gallery-photo-2-tablet.jpg" media="(min-width: 48em)">
+            <img src="img/gallery-photo-2-mobile.jpg" alt="Кактус на фоне каньона">
+          </picture>
+          <div class="gallery-photo__info">
+            <div class="gallery-photo__text">
+              <h3 class="gallery-photo__header">Местная растительность</h3>
+              <p class="gallery-photo__author">Автор фото: Сергей</p>
+            </div>
+            <div class="gallery-photo__like">
+              <svg class="gallery-photo__icon-like" width="22" height="20" role="img" title="иконка лайка">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
+              </svg>
+              <b class="gallery-photo__num-likes">143</b>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item gallery-photo">
+          <picture class="gallery-photo__image">
+            <source srcset="img/gallery-photo-3-desktop.jpg" media="(min-width: 80em)">
+            <source srcset="img/gallery-photo-3-tablet.jpg" media="(min-width: 48em)">
+            <img src="img/gallery-photo-3-mobile.jpg" alt="Горная дорога">
+          </picture>
+          <div class="gallery-photo__info">
+            <div class="gallery-photo__text">
+              <h3 class="gallery-photo__header">Дорога на север</h3>
+              <p class="gallery-photo__author">Автор фото: Петр</p>
+            </div>
+            <div class="gallery-photo__like">
+              <svg class="gallery-photo__icon-like" width="22" height="20" role="img" title="иконка лайка">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
+              </svg>
+              <b class="gallery-photo__num-likes">96</b>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item gallery-photo">
+          <picture class="gallery-photo__image">
+            <source srcset="img/gallery-photo-4-desktop.jpg" media="(min-width: 80em)">
+            <source srcset="img/gallery-photo-4-tablet.jpg" media="(min-width: 48em)">
+            <img src="img/gallery-photo-4-mobile.jpg" alt="Панорама каньона">
+          </picture>
+          <div class="gallery-photo__info">
+            <div class="gallery-photo__text">
+              <h3 class="gallery-photo__header">Мост дьявола</h3>
+              <p class="gallery-photo__author">Автор фото: Антон</p>
+            </div>
+            <div class="gallery-photo__like">
+              <svg class="gallery-photo__icon-like" width="22" height="20" role="img" title="иконка лайка">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
+              </svg>
+              <b class="gallery-photo__num-likes">254</b>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery-video">
+      <h2 class="visually-hidden">Видеопрезентация</h2>
+      <div class="gallery-video__text-wrapper">
+        <b class="gallery-video__heading">Все еще сомневаетесь?</b>
+        <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+      <div class="gallery-video__player-wrapper">
+        <div id="player" class="gallery-video__player">
+            <iframe id="ytplayer" type="text/html" width="320" height="180"
+            src="https://www.youtube.com/embed/HU22peKtyfY?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&color=white"
+            frameborder="0" allowfullscreen>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper wrapper">
+      <div class="page-footer__hashtag">
+        <b>#Visitsedona</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social__logo social__logo--twitter" width="18" height="14" role="img" title="иконка Twitter">
+                <use xlink:href="img/sprite.svg#icon-social-twitter"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social__logo social__logo--facebook" width="9" height="18" role="img" title="иконка Facebook">
+                <use xlink:href="img/sprite.svg#icon-social-facebook"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="social__logo social__logo--youtube" width="20" height="14" role="img" title="иконка Youtube">
+                <use xlink:href="img/sprite.svg#icon-social-youtube"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <div class="copyright__wrapper">
+          <p>
+            <span class="copyright__text">Разработано</span>
+            <a href="#" class="copyright__link">
+              <svg class="copyright__logo" width="27" height="34" role="img" title="иконка HTML Academy">
+                <use xlink:href="img/sprite.svg#icon-copyright"/>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", svg4everybody({}));
+  </script>
+</body>
+</html>
