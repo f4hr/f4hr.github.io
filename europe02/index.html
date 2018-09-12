@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Европа02</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,11 +12,7 @@
     <div class="wrapper">
       <div class="page-header__container">
         <a href="#" class="page-header__logo">
-          <img srcset="img/logo-s.png 102w,
-                       img/logo.png 133w"
-               sizes="(min-width: 768px) 133px,
-                      102px"
-               src="img/logo-s.png" alt="Логотип Европа02">
+          <span class="visually-hidden">Лого Европа02</span>
         </a>
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
@@ -59,7 +54,7 @@
           </div>
         </div>
         <div class="intro__form">
-          <b>Оставьте заявку и получите скидку</b>
+          <b>Оставьте заявку и&nbsp;получите скидку</b>
           <form action="" method="POST" class="form-intro__form">
             <input class="intro__form-name" type="text" placeholder="Ваше имя" required>
             <input class="intro__form-tel" type="tel" placeholder="Ваш номер" required>
@@ -103,42 +98,47 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="advantages">
+    <section class="advantages">
       <h2 class="advantages__header">В чём преимущество<br><b>наших домов</b></h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <b class="advantages__title">Каркас</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-        <li class="advantages__item">
-          <b class="advantages__title">Евро-брус</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-        <li class="advantages__item">
-          <b class="advantages__title">Евро-брус</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-        <li class="advantages__item">
-          <b class="advantages__title">Утеплитель</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-        <li class="advantages__item">
-          <b class="advantages__title">Ветро-пленка</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-        <li class="advantages__item">
-          <b class="advantages__title">Ветро-пленка</b>
-          <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
-        </li>
-      </ul>
-      <div class="advantages__form">
-        <span class="advantages__form-text">
-          <b>Оставьте заявку на получение технической документации</b>
-          наших домов и наш менеджер отправит его Вам в течение 3-х минут
-        </span>
-        <a href="#" class="advantages__button">Отправить заявку</a>
+      <div class="wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <b class="advantages__title">Каркас</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+          <li class="advantages__item">
+            <b class="advantages__title">Евро-брус</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+          <li class="advantages__item">
+            <b class="advantages__title">Евро-брус</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+          <li class="advantages__item">
+            <b class="advantages__title">Утеплитель</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+          <li class="advantages__item">
+            <b class="advantages__title">Ветро-пленка</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+          <li class="advantages__item">
+            <b class="advantages__title">Ветро-пленка</b>
+            <span class="advantages__text">Практичные комплектующие для перемещения опалубки укрупненными картами при помощи крана.</span>
+          </li>
+        </ul>
+        <div class="advantages__form">
+          <div class="advantages__form-container">
+            <span class="advantages__form-text">
+              <b class="advantages__form-heading">Оставьте заявку на получение технической документации</b>
+              наших домов и <b>наш менеджер отправит его</b> Вам в течение 3-х минут
+            </span>
+            <span class="advantages__form-border"></span>
+          </div>
+          <a href="#" class="advantages__button">Отправить заявку</a>
+        </div>
       </div>
-    </section> -->
+    </section>
     <section class="workflow">
       <div class="wrapper">
         <h2 class="workflow__header">Схема работы с нами</h2>
@@ -170,12 +170,100 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="gallery">
+    <section class="gallery">
       <h2 class="gallery__header">Фотографии <b>наших домов</b></h2>
-      <div class="gallery__pagination"></div>
-      <div class="gallery__list"></div>
-    </section> -->
+      <ul class="gallery__pagination">
+        <li class="gallery__pagination-item">
+          <button class="gallery__pagination-button gallery__pagination-button--active">Дома</button>
+        </li>
+        <li class="gallery__pagination-item">
+          <button class="gallery__pagination-button">Коттеджи</button>
+        </li>
+        <li class="gallery__pagination-item">
+          <button class="gallery__pagination-button">Таунхаусы</button>
+        </li>
+        <li class="gallery__pagination-item">
+          <button class="gallery__pagination-button">Дачи</button>
+        </li>
+      </ul>
+      <ul class="gallery__list">
+        <div class="gallery__row">
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+          <li class="gallery__item gallery__item--m">
+            <img src="../img/gallery-photo-2-m.jpg" alt="Фото коттеджа" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-3-s.jpg" alt="Фото коттеджа" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-3-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+        </div>
+        <div class="gallery__row">
+          <li class="gallery__item gallery__item--m">
+            <img src="../img/gallery-photo-2-m.jpg" alt="Фото коттеджа" class="gallery__image">
+          </li>
+          <li class="gallery__item gallery__item--m">
+            <img src="../img/gallery-photo-2-m.jpg" alt="Фото коттеджа" class="gallery__image">
+          </li>
+        </div>
+        <div class="gallery__row">
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+          <li class="gallery__item">
+            <img src="../img/gallery-photo-1-s.jpg" alt="Фото интерьера" class="gallery__image">
+          </li>
+        </div>
+      </ul>
+    </section>
   </main>
+  <div class="modal modal--closed modal-overlay">
+    <div class="modal__container">
+      <div class="modal__wrapper">
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <b class="modal__heading">Как мы работаем</b>
+        <ul class="modal__list">
+          <li class="modal__list-item">
+            <span class="modal__list-number">124</span>
+            <span class="modal__list-text">Практичные комплектующие при помощи крана.</span>
+          </li>
+          <li class="modal__list-item">
+            <span class="modal__list-number">1000</span>
+            <span class="modal__list-text">Практичные комплектующие при помощи крана.</span>
+          </li>
+          <li class="modal__list-item">
+            <span class="modal__list-number">99%</span>
+            <span class="modal__list-text">Практичные комплектующие при помощи крана.</span>
+          </li>
+        </ul>
+        <div class="modal__form-container">
+          <b class="modal__form-heading">Оставьте заявку на бесплатный замер и консультацию</b>
+          <span class="modal__form-text">Наш менеджер свяжется с вами в течении 15 минут и уточнит детали.</span>
+          <form action="" class="modal__form">
+            <label class="modal__form-name-label" for="modal-name">Ваше имя</label>
+            <input class="modal__form-name-input" type="text" id="modal-name" placeholder="Иван">
+            <label class="modal__form-phone-label" for="modal-phone">Ваш номер</label>
+            <input class="modal__form-phone-input" type="tel" id="modal-phone-label" placeholder="+7 987 654-32-10">
+            <input class="modal__submit" type="submit" value="Заказать консультацию">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/main.min.js"></script>
 </body>
 </html>
